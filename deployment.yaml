@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cartoon-animation
+  namespace: cartoon
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cartoon-animation
+  template:
+    metadata:
+      labels:
+        app: cartoon-animation
+    spec:
+      containers:
+        - name: cartoon-animation
+          image: nafees007/cartoon-animation-web:latest
+          ports:
+            - containerPort: 80
+          imagePullPolicy: Always
+

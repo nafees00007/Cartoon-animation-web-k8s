@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cartoon-animation-svc
+  namespace: cartoon
+spec:
+  type: NodePort
+  selector:
+    app: cartoon-animation
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30080
+

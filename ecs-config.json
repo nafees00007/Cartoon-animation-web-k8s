@@ -1,0 +1,5 @@
+{
+  "desiredCount": 2,
+  "cluster": "my-react-cluster",
+  "service": "my-react-cluster"
+}

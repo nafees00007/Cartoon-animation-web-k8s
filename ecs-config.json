@@ -1,5 +1,5 @@
 {
-  "desiredCount": 0,
+  "desiredCount": 3,
   "cluster": "my-react-cluster",
   "service": "my-react-app-service-phliukmk"
 }
